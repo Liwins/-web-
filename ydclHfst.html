@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江苏大学--黑洞攻击演示系统</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/index.ico" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./index.html"><span>江苏大学---</span>黑洞攻击演示教学系统</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 简介</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+			<li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 无线传感器简介</a></li>
+			<li><a href="heiDong.html"><span class="glyphicon glyphicon-th"></span> 黑洞攻击原理</a></li>
+
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击演示 <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="ysZC.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 正常路由演示
+						</a>
+					</li>
+					<li>
+						<a class="" href="ysHeidong.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 黑洞攻击演示
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击应对策略 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="ydclAodv.html">
+							<span class="glyphicon glyphicon-share-alt"></span> AODV协议改进方案
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclRyly.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 冗余路由法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclJdxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 节点的信用衡量法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclWatchdog.html">
+							<span class="glyphicon glyphicon-share-alt"></span> Watchdog方法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclXyjd.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 下游邻居节点验证法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclKtxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 可调下游节点验证法
+						</a>
+					</li>
+						<li>
+						<a class="" href="ydclJmts.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 加密和跳数法
+						</a>
+					</li>
+					
+					<li>
+						<a class="" href="ydclHfst.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 接回复确认和试探法
+						</a>
+					</li>
+				</ul>
+			</li>
+		
+			
+		</ul>
+	
+	</div><!--/.sidebar-->
+	
+	
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">接回复确认和试探法</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">防御策略---接回复确认和试探法</h1>
+			</div>
+		</div><!--/.row-->
+				
+		
+			
+		
+		
+		
+			
+		<div class="row">
+			
+			
+
+			<div class="col-md-12">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h2>接回复确认和试探法</h2>
+					</div>
+					<div class="panel-body">
+						<h3>
+						B．Awerbuch引提出的基于直接回复信息的方法，目的节点每次成功接收报文后，都会将一个确认(ACK)报文发回源节点。若一个可疑路径丢弃报文的数目超过一个门限时，源节点就在自身和目的节点之间进行双向搜索，向中间节点链上的每一个节点发送数据报文，这些报文也称做试探，中间节点将发回同复消息。源节点和每个试探之间共享一个密钥，并且试探也经过“洋葱”加密。一旦收到报文，每个试探就会发回一个ACK信息，这个ACK信息是用源节点与试探之间的共享密钥加密过的；随后，源节点验证加密过的ACK信息，并认为离目的节点最近的那个发回ACK信息的节点是错误的。此方法有两个明显的缺陷：a)由于同复ACK报文，大量地浪费了网络链路带宽，特别是大型网络；b)引入了复杂的加／解密算法，代价高。
+						
+						</h3>
+					</div>
+				</div>
+			</div>
+
+			
+			
+		</div><!-- /.row -->
+		
+		
+		
+		
+		
+		
+	</div><!--/.main-->
+<DIV align=center>
+		<TABLE id=table14 height=26 cellSpacing=0 cellPadding=0 width=776 border=0>
+			<TBODY>
+					<TR>
+							<TD vAlign=bottom>
+								<P>
+								<P style="LINE-HEIGHT: 200%" align=center><FONT 
+									color=#666666>
+									Copyright<SPAN lang=en><FONT 
+									face=宋体>&copy;</FONT></SPAN>江苏大学版权所有！苏ICP备05071359号<BR>地址：江苏省镇江市学府路301号 
+									邮编:212013 建议使用：1024*768分辨率&nbsp;&nbsp;&nbsp;<A 
+									href="http://ww.ujs.edu.cn/tougao.php?node_id=308">联系我们</A>&nbsp;&nbsp;
+									<A href="http://www.ujs.edu.cn">学校官网主页</A></FONT></P>
+							</TD>
+					</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

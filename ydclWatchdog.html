@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江苏大学--黑洞攻击演示系统</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/index.ico" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="./index.html"><span>江苏大学---</span>黑洞攻击演示教学系统</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 简介</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+			<li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 无线传感器简介</a></li>
+			<li><a href="heiDong.html"><span class="glyphicon glyphicon-th"></span> 黑洞攻击原理</a></li>
+
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击演示 <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="ysZC.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 正常路由演示
+						</a>
+					</li>
+					<li>
+						<a class="" href="ysHeidong.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 黑洞攻击演示
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击应对策略 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="ydclAodv.html">
+							<span class="glyphicon glyphicon-share-alt"></span> AODV协议改进方案
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclRyly.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 冗余路由法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclJdxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 节点的信用衡量法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclWatchdog.html">
+							<span class="glyphicon glyphicon-share-alt"></span> Watchdog方法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclXyjd.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 下游邻居节点验证法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclKtxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 可调下游节点验证法
+						</a>
+					</li>
+						<li>
+						<a class="" href="ydclJmts.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 加密和跳数法
+						</a>
+					</li>
+					
+					<li>
+						<a class="" href="ydclHfst.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 接回复确认和试探法
+						</a>
+					</li>
+				</ul>
+			</li>
+		
+			
+		</ul>
+	
+	</div><!--/.sidebar-->
+	
+	
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">Watchdog方法</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">防御策略---Watchdog方法</h1>
+			</div>
+		</div><!--/.row-->
+				
+		
+			
+		
+		
+		
+			
+		<div class="row">
+			
+			
+
+			<div class="col-md-12">
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h2>Watchdog方法</h2>
+					</div>
+					<div class="panel-body">
+						<h3>
+						 Marti等人刮提出了Watchdog和Pathrater两种概念。该方法假设网络具有对称的双向连通性，即若节点A可以听到节点C的内容，同时C也可以听到A的内容。当节点A向下一跳节点C发送报文时，它知道C的下一跳节点是D，所以A可以监听C发送给D的内容。每一个节点都是其他节点的Watchdog。当节点转发数据包时，Watchdog监视下一节点是否也转发了此包，如果下一节点不转发此数据包时，那么就认为该节点为不正常，有可能是恶意节点。同时，Watchdog把每一个数据包与缓存中的数据包进行比较。如果匹配，则认为该包是正常传输的，清除缓存里相应的数据；如果不匹配，则保留缓存里的数据，直到超时，然后增加该节点的数据包转发不正常标志。如果超过一个门限，那么同样认为此节点为恶意节点。但是该方法存在两个明显的缺陷：a)不适合节点或接收者之间相互配合产生的黑洞。b)不能发现恶意节点有意错报其他节点不正常的情况。
+						</h3>
+					</div>
+				</div>
+			</div>
+
+			
+			
+		</div><!-- /.row -->
+		
+		
+		
+		
+		
+		
+	</div><!--/.main-->
+<DIV align=center>
+		<TABLE id=table14 height=26 cellSpacing=0 cellPadding=0 width=776 border=0>
+			<TBODY>
+					<TR>
+							<TD vAlign=bottom>
+								<P>
+								<P style="LINE-HEIGHT: 200%" align=center><FONT 
+									color=#666666>
+									Copyright<SPAN lang=en><FONT 
+									face=宋体>&copy;</FONT></SPAN>江苏大学版权所有！苏ICP备05071359号<BR>地址：江苏省镇江市学府路301号 
+									邮编:212013 建议使用：1024*768分辨率&nbsp;&nbsp;&nbsp;<A 
+									href="http://ww.ujs.edu.cn/tougao.php?node_id=308">联系我们</A>&nbsp;&nbsp;
+									<A href="http://www.ujs.edu.cn">学校官网主页</A></FONT></P>
+							</TD>
+					</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

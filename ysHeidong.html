@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江苏大学--黑洞攻击演示系统</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/index.ico" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+					<a class="navbar-brand" href="./index.html"><span>江苏大学---</span>黑洞攻击演示教学系统</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 简介</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+			<li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 无线传感器简介</a></li>
+			<li><a href="heiDong.html"><span class="glyphicon glyphicon-th"></span> 黑洞攻击原理</a></li>
+
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击演示 <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="ysZC.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 正常路由演示
+						</a>
+					</li>
+					<li>
+						<a class="" href="ysHeidong.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 黑洞攻击演示
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击应对策略 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="ydclAodv.html">
+							<span class="glyphicon glyphicon-share-alt"></span> AODV协议改进方案
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclRyly.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 冗余路由法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclJdxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 节点的信用衡量法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclWatchdog.html">
+							<span class="glyphicon glyphicon-share-alt"></span> Watchdog方法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclXyjd.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 下游邻居节点验证法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclKtxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 可调下游节点验证法
+						</a>
+					</li>
+						<li>
+						<a class="" href="ydclJmts.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 加密和跳数法
+						</a>
+					</li>
+					
+					<li>
+						<a class="" href="ydclHfst.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 接回复确认和试探法
+						</a>
+					</li>
+				</ul>
+			</li>
+		
+			
+		</ul>
+	
+	</div><!--/.sidebar-->
+	
+	
+	
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">黑洞攻击展示</li>
+			</ol>
+		</div><!--/.row-->
+
+				
+		
+			
+		
+			<div class="row">
+			<div class="col-lg-12">
+				
+		
+				<div class="alert bg-success" role="alert">
+					 <h3>黑洞攻击展示</h3><br>
+					<h4>本页面展示了黑洞攻击，具体攻击步骤如下：<br>
+					源节点发送请求目的节点的路由广播，其他节点收到后，
+					由于路由表中没有该节点的路由，则也进行路由的广播。
+					需要注意的是黑洞节点当收到请求路由信息时，会进行应答
+					（因为他会伪装自己的路由表中拥有所有节点的路由信息，并且经过一跳就可以到达），
+					当应答到达源节点后，源节点会依照黑洞节点发来的RREP建立正向路由，并发送数据，当数据到达黑洞节点时，黑洞节点则不会转发。达到拒绝服务攻击的目的。</h4>
+				</div>
+			
+			</div>
+		</div><!--/.row-->	
+		<div class="row">
+			<div class="col-lg-12">
+				
+				<div class="panel panel-default">
+					<div class="panel-body tabs">
+					
+						<ul class="nav nav-pills">
+							<li class="active"><a href="#pilltab1" data-toggle="tab">黑洞攻击演示</a></li>
+							<li><a href="#pilltab2" data-toggle="tab">黑洞攻击后果--正常命令发送与拒绝服务攻击</a></li>
+					
+						</ul>
+		
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="pilltab1">
+								<h4>黑洞攻击演示</h4>
+								<embed src="./flash/heidong.swf" width="1100" height="500"></embed>   
+							</div>
+							<div class="tab-pane fade" id="pilltab2">
+								<h4>黑洞攻击后果--正常命令发送与拒绝服务攻击</h4>
+								<embed src="./flash/test3.swf" width="1100" height="500"></embed>  
+							</div>
+							
+						</div>
+					</div>
+				
+			
+			</div>
+		</div><!--/.row-->	
+		
+		
+		
+		
+		
+	</div><!--/.main-->
+<DIV align=center>
+		<TABLE id=table14 height=26 cellSpacing=0 cellPadding=0 width=776 border=0>
+			<TBODY>
+					<TR>
+							<TD vAlign=bottom>
+								<P>
+								<P style="LINE-HEIGHT: 200%" align=center><FONT 
+									color=#666666>
+									Copyright<SPAN lang=en><FONT 
+									face=宋体>&copy;</FONT></SPAN>江苏大学版权所有！苏ICP备05071359号<BR>地址：江苏省镇江市学府路301号 
+									邮编:212013 建议使用：1024*768分辨率&nbsp;&nbsp;&nbsp;<A 
+									href="http://ww.ujs.edu.cn/tougao.php?node_id=308">联系我们</A>&nbsp;&nbsp;
+									<A href="http://www.ujs.edu.cn">学校官网主页</A></FONT></P>
+							</TD>
+					</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

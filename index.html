@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江苏大学--黑洞攻击演示系统</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/index.ico" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			
+			
+	            
+				<a class="navbar-brand" href="./index.html"><span>江苏大学---</span>黑洞攻击演示教学系统</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 简介</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm- 	 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+			<li class="active"><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 无线传感器简介</a></li>
+			<li><a href="heiDong.html"><span class="glyphicon glyphicon-th"></span> 黑洞攻击原理</a></li>
+
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击演示 <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="ysZC.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 正常路由演示
+						</a>
+					</li>
+					<li>
+						<a class="" href="ysHeidong.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 黑洞攻击演示
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击应对策略 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="ydclAodv.html">
+							<span class="glyphicon glyphicon-share-alt"></span> AODV协议改进方案
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclRyly.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 冗余路由法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclJdxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 节点的信用衡量法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclWatchdog.html">
+							<span class="glyphicon glyphicon-share-alt"></span> Watchdog方法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclXyjd.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 下游邻居节点验证法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclKtxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 可调下游节点验证法
+						</a>
+					</li>
+						<li>
+						<a class="" href="ydclJmts.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 加密和跳数法
+						</a>
+					</li>
+					
+					<li>
+						<a class="" href="ydclHfst.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 接回复确认和试探法
+						</a>
+					</li>
+				</ul>
+			</li>
+		
+			
+		</ul>
+	
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">			
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">无线传感器简介</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">无线传感器</h1>
+			</div>
+		</div><!--/.row-->
+        
+
+		
+
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">无线传感器体系组成</div>
+					<div class="panel-body">
+						
+						近年来，传感器技术、无线通信技术与嵌入式技术的不断进步，推动了低功耗、多功能传感器的快速发展，使其在微小体积内能够集成信息采集、数据处理和无线通信等多种功能。由这种微型传感器组成的无线传感器网络(Wireless Sensor Networks，无线传感器网络)引起了人们的极大关注。无线传感器网络是由部署在目标区域内的具有较大数量和较小体积，拥有一定规模的廉价传感器节点组成。这些节点采用无线通信的方式，通过一定路由协议形成一种多跳自组织的网络系统，彼此之间能够通过协作实时监测、感知和采集网络分布区域内的各种环境或指定目标的信息，并对这些信息进行处理，从而获取详尽而准确的信息。这种传感器网络综合了微电子、计算机和网络通信等多个学科的知识，是当前国际上备受关注的、知识高度集成的一个新兴研究热点。
+						<br>  人们可以在任何时间，任何地点甚至任何环境下，通过无线传感器网络获取客观世界的大量信息，极大地扩展了网络的功能和人类认识世界的能力。因此，无线传感器网络的应用前景非常广阔，能够广泛地应用于国防军事、环境检测、医疗卫生、交通管理、空间探索、建筑物状态监控以及工业园区安全监测等领域。
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+				
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">无线传感器体系示意图</div>
+					<div class="panel-body">
+						<span class="chat-img pull-left">
+									<img src="./images/wxcgqsyt.png" alt="User Avatar" />
+								</span>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+		<div class="row">
+		<div class="panel-heading">无线传感器操作系统</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>Contiki系统</h4>
+						<div class="easypiechart" id="easypiechart-blue" data-percent="16" ><span class="percent">16%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>TinyOS</h4>
+						<div class="easypiechart" id="easypiechart-orange" data-percent="14" ><span class="percent">14%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>LiteOS</h4>
+						<div class="easypiechart" id="easypiechart-teal" data-percent="10" ><span class="percent">10%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="panel panel-default">
+					<div class="panel-body easypiechart-panel">
+						<h4>其他</h4>
+						<div class="easypiechart" id="easypiechart-red" data-percent="60" ><span class="percent">60%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--/.row-->
+								
+		<div class="row">
+			<div class="col-md-12">
+			
+				<div class="panel panel-default chat">
+					<div class="panel-heading" id="accordion"><span class="glyphicon glyphicon-comment"></span>传感器介绍</div>
+					<div class="panel-body">
+						<ul>
+							<li class="left clearfix">
+								<span class="chat-img pull-left">
+									<img src="./images/zdjd.png" alt="User Avatar" class="img-circle" />
+								</span>
+								<div class="chat-body clearfix">
+									<div class="header">
+										<strong class="primary-font">终端节点</strong> <small class="text-muted">用于采集数据</small>
+									</div>
+									<p>
+										 1)无线传感器节点有传感器、处理器和无线通信模块组成。<br>
+                                         2)传感器负责对感知对象的信息进行采集和数据转换；<br>
+                                         3)处理器负责控制整个节点的操作，存储和处理自身采集的数据以及传感器其他节点发来的数据；<br>
+                                         4)无线通信负责实现传感器节点之间以及传感器节点与用户节点管理控制节点之间的通信，交互控制消息和收/发业务数据。
+										<br> 5)他们的工作周期中，大部分时间留在睡眠状态
+
+									</p>
+								</div>
+							</li>
+								<li class="left clearfix">
+								<span class="chat-img pull-left">
+									<img src="./images/lyqjd.png" alt="User Avatar" class="img-circle" />
+								</span>
+								<div class="chat-body clearfix">
+									<div class="header">
+										<strong class="primary-font">路由器节点</strong> <small class="text-muted">起到路由的作用</small>
+									</div>
+									<p>
+										1)执行的无线传感器路由器的任务<br>
+										2)他们是永久供电<br>
+										3)他们总是活跃
+
+									</p>
+								</div>
+							</li>
+						
+							<li class="left clearfix">
+								<span class="chat-img pull-left">
+									<img src="./images/xtqjd.png" alt="User Avatar" class="img-circle" />
+								</span>
+								<div class="chat-body clearfix">
+									<div class="header">
+										<strong class="primary-font">协调器节点</strong> <small class="text-muted">数据中心</small>
+									</div>
+									<p>
+									1）它在传感器网络中是唯一的<br>
+									2）它还执行传感器网络协调器任务<br>
+									3）具有连接到服务器的串行接口<br>
+									4）这是永久供电<br>
+									5）它始终是积极的<br>
+									6）主管从服务器到传感器网络转发数据的，反之亦然									
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+			
+				</div>
+				
+			</div><!--/.col-->
+			
+			
+		</div><!--/.row-->
+
+	</div>	<!--/.main-->
+	
+	<DIV align=center>
+		<TABLE id=table14 height=26 cellSpacing=0 cellPadding=0 width=776 border=0>
+			<TBODY>
+					<TR>
+							<TD vAlign=bottom>
+								<P>
+								<P style="LINE-HEIGHT: 200%" align=center><FONT 
+									color=#666666>
+									Copyright<SPAN lang=en><FONT 
+									face=宋体>&copy;</FONT></SPAN>江苏大学版权所有！苏ICP备05071359号<BR>地址：江苏省镇江市学府路301号 
+									邮编:212013 建议使用：1024*768分辨率&nbsp;&nbsp;&nbsp;<A 
+									href="http://ww.ujs.edu.cn/tougao.php?node_id=308">联系我们</A>&nbsp;&nbsp;
+									<A href="http://www.ujs.edu.cn">学校官网主页</A></FONT></P>
+							</TD>
+					</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	
+	
+
+	
+	
+		
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

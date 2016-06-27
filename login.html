@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江苏大学--黑洞攻击演示系统</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/index.ico" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+			<div class="login-panel panel panel-default">
+				<div class="panel-heading">登录</div>
+				<div class="panel-body">
+					<form role="form">
+						<fieldset>
+							<div class="form-group">
+								<input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+							</div>
+							<div class="form-group">
+								<input class="form-control" placeholder="Password" name="password" type="password" value="">
+							</div>
+							<div class="checkbox">
+								<label>
+									<input name="remember" type="checkbox" value="Remember Me">下次自动登录
+								</label>
+							</div>
+							<a href="index.html" class="btn btn-primary">登录</a>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /.col-->
+	</div><!-- /.row -->	
+	
+		
+<DIV align=center>
+		<TABLE id=table14 height=26 cellSpacing=0 cellPadding=0 width=776 border=0>
+			<TBODY>
+					<TR>
+							<TD vAlign=bottom>
+								<P>
+								<P style="LINE-HEIGHT: 200%" align=center><FONT 
+									color=#666666>
+									Copyright<SPAN lang=en><FONT 
+									face=宋体>&copy;</FONT></SPAN>江苏大学版权所有！苏ICP备05071359号<BR>地址：江苏省镇江市学府路301号 
+									邮编:212013 建议使用：1024*768分辨率&nbsp;&nbsp;&nbsp;<A 
+									href="http://ww.ujs.edu.cn/tougao.php?node_id=308">联系我们</A>&nbsp;&nbsp;
+									<A href="http://www.ujs.edu.cn">学校官网主页</A></FONT></P>
+							</TD>
+					</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		!function ($) {
+			$(document).on("click","ul.nav li.parent > a > span.icon", function(){		  
+				$(this).find('em:first').toggleClass("glyphicon-minus");	  
+			}); 
+			$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>

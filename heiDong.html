@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>江苏大学--黑洞攻击演示系统</title>
+<link rel="shortcut icon" type="image/x-icon" href="./images/index.ico" media="screen" />
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+
+				<a class="navbar-brand" href="./index.html"><span>江苏大学---</span>黑洞攻击演示教学系统</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> 用户 <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#"><span class="glyphicon glyphicon-user"></span> 简介</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> 设置</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 注销</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		
+		<ul class="nav menu">
+			<li><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 无线传感器简介</a></li>
+			<li><a href="heiDong.html"><span class="glyphicon glyphicon-th"></span> 黑洞攻击原理</a></li>
+
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击演示 <span data-toggle="collapse" href="#sub-item-1" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-1">
+					<li>
+						<a class="" href="ysZC.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 正常路由演示
+						</a>
+					</li>
+					<li>
+						<a class="" href="ysHeidong.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 黑洞攻击演示
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="parent ">
+				<a>
+					<span class="glyphicon glyphicon-list"></span> 黑洞攻击应对策略 <span data-toggle="collapse" href="#sub-item-2" class="icon pull-right"><em class="glyphicon glyphicon-s glyphicon-plus"></em></span> 
+				</a>
+				<ul class="children collapse" id="sub-item-2">
+					<li>
+						<a class="" href="ydclAodv.html">
+							<span class="glyphicon glyphicon-share-alt"></span> AODV协议改进方案
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclRyly.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 冗余路由法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclJdxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 节点的信用衡量法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclWatchdog.html">
+							<span class="glyphicon glyphicon-share-alt"></span> Watchdog方法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclXyjd.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 下游邻居节点验证法
+						</a>
+					</li>
+					<li>
+						<a class="" href="ydclKtxy.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 可调下游节点验证法
+						</a>
+					</li>
+						<li>
+						<a class="" href="ydclJmts.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 加密和跳数法
+						</a>
+					</li>
+					
+					<li>
+						<a class="" href="ydclHfst.html">
+							<span class="glyphicon glyphicon-share-alt"></span> 接回复确认和试探法
+						</a>
+					</li>
+				</ul>
+			</li>
+		
+			
+		</ul>
+	
+	</div><!--/.sidebar-->
+		
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">		
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">黑洞攻击原理</li>
+			</ol>
+		</div><!--/.row-->
+		
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">黑洞攻击原理</h1>
+			</div>
+		</div><!--/.row-->
+									
+	
+	<div class="row">
+			<div class="col-lg-12">
+				<h2>黑洞攻击简介</h2>
+			</div>
+			
+			<div class="col-md-12">
+				<div class="panel panel-gray">
+					<div class="panel-heading dark-overlay">概要</div>
+					<div class="panel-body">
+						<p>AODV协议的特点保证了Adhoc网络能够动态组网并自组织运行，而该协议正常运行的前提是网络中的节点都必须是合作的、可信的。
+						一旦出现了恶意节点，很容易就对协议造成破坏。黑洞攻击正是利用了AODV协议的这些弱点来进行攻击。
+						Adhoc网络中的黑洞攻击节点对收到的每个路由请求报文都回复一个虚拟的路由响应报文，
+						以表明该节点“有一条到达目的节点的最短路由”。由于黑洞攻击节点回复路由响应时省略了许多中间环节，
+						因此它的路由响应往往会最先到达源节点。收到该回复的源节点则很可能就此建立错误的路由，
+						把黑洞攻击节点作为路由路径中的中间节点，将数据包传送过去。此时，攻击节点只需要将收到的数据包统统销毁，
+						就会在网络中形成一个吞噬数据包的“黑洞”，从而破坏协议的正常功能，甚至使网络瘫痪。</p>
+					</div>
+				</div>
+			</div><!--/.col-->
+			
+			
+			
+			
+		</div><!--/.row-->	
+				<div class="row">
+			<div class="col-lg-12">
+				<h2>黑洞攻击详细原理</h2>
+			</div>
+			
+			<div class="col-md-12">
+				<div class="panel panel-gray">
+					<div class="panel-body tabs">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">AODV协议缺陷</a></li>
+							<li><a href="#tab2" data-toggle="tab">黑洞的产生</a></li>
+							<li><a href="#tab3" data-toggle="tab">黑洞攻击</a></li>
+						</ul>
+		
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="tab1">
+								<h4>AODV协议缺陷</h4>
+								<p>
+								Adhoc网络的路由协议主要存在以下几点问题：<br>
+(1)盲目信任邻接节点。现有的Adhoc路由协议多是基于对所有节点信任基础之上的，互相转发数据的合作大多是自发的，这样很容易被恶意节点所利用。<br>
+(2) 吞吐量。Adhoc网络通过利用所有有效路由转发数据的方式来实现最大的吞吐量，但是中间节点由于很多原因不可能完成。<br>
+(3) 易得到网络拓扑结构。Adhoc网络的路由协议(AODV、DSR)都是在包头以明文形式记录路由信息。分析数据包头的方法就可以得出网络中节点之间物理位置的邻接关系，进而得到网络的拓扑结构。<br>
+(4) 缺少自稳定特性。错误的信息有可能会被留在路由表中，且保持相当长的时间。<br>
+(5) 缺少检测和处罚不规范行为的机制。<br>
+
+								</p>
+							</div>
+							<div class="tab-pane fade" id="tab2">
+								<h4>黑洞的产生</h4>
+								<p>
+								黑洞攻击，是一种在网络层的拒绝服务攻击。网络中的某个恶意节点利用协议机制， 
+								声称自己就是目的节点或者有一条最新、最近的路由到达目的节点，当恶意节点收到来 自其他节点的RREQ 请求分组时，
+								它会直接回复RREP应答分组。源节点通过这个RREP应答分组建立源节点到恶意节点的正向路由，开始发送数据。这个恶意节点收到数据后， 
+								并不转发数据，而是直接将数据全部丢弃。本文所讨论的恶意节点是路由的中间节点。<br>
+								黑洞有两个特征：<br>①即使没有到目的节点的路由信息， 黑洞节点也会声称自己具备该路由信息，目的是为了干扰正常的数据传输；<br>
+								②当收到其它节点传来的数据分组时， 黑洞节点会全部丢弃该分组。“黑洞”也由此而得名。黑洞攻击有两种方式，单个节点的黑洞攻击和多个节点配合的黑洞攻击 。
+
+								</p>
+							</div>
+							<div class="tab-pane fade" id="tab3">
+								<h4>黑洞攻击</h4>
+								<p>
+								为实施黑洞攻击，网络中的恶意结点在接收到源结点发送的RREQ包后，
+								伪造一个比RREQ中序号大的序号，发送虚假的路由信息，
+								声称其拥有最佳的路由，可能实际上该结点根本无法到达目的结点，
+								这将导致其他结点所发送的数据包都经过该结点，恶意结点拦截并可能丢弃掉这些数据包。	<br>
+								源节点S准备向目的节点D发送数据，由于没有可用的路由，
+								因此发起一次路由请求过程。源节点A广播一个RREQ请求分组时，
+								节点A、 B、M都收到了这个请求分组。节点M是恶意节点，它立即返回一个RREP应答分组， 
+								谎称它有一条路由到达目的节点D。源节点A收到这个伪造的RREP时，它认为通过节点M有一条最短的路由，
+								因此开始向目的节点 D发送数据。当数据通过节点M时，M 并不转发这些数据，而是将它们直接丢弃掉。<br>								
+								</p>
+										<span class="chat-img pull-left">
+									<img src="./images/hdgj.png" alt="User Avatar" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</div><!--/.panel-->
+			</div><!--/.col-->
+			
+			
+			
+		</div><!-- /.row -->
+	</div>	<!--/.main-->
+		  
+<DIV align=center>
+		<TABLE id=table14 height=26 cellSpacing=0 cellPadding=0 width=776 border=0>
+			<TBODY>
+					<TR>
+							<TD vAlign=bottom>
+								<P>
+								<P style="LINE-HEIGHT: 200%" align=center><FONT 
+									color=#666666>
+									Copyright<SPAN lang=en><FONT 
+									face=宋体>&copy;</FONT></SPAN>江苏大学版权所有！苏ICP备05071359号<BR>地址：江苏省镇江市学府路301号 
+									邮编:212013 建议使用：1024*768分辨率&nbsp;&nbsp;&nbsp;<A 
+									href="http://ww.ujs.edu.cn/tougao.php?node_id=308">联系我们</A>&nbsp;&nbsp;
+									<A href="http://www.ujs.edu.cn">学校官网主页</A></FONT></P>
+							</TD>
+					</TR>
+			</TBODY>
+		</TABLE>
+	</DIV>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+</body>
+
+</html>
